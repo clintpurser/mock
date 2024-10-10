@@ -1,0 +1,23 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "cdp:mock",
+  "visibility": "public",
+  "url": "https://github.com/clintpurser/mock",
+  "description": "Modular sensor component: mock-sensor",
+  "models": [
+    {
+      "api": "rdk:component:sensor",
+      "model": "cdp:mock:mock-sensor"
+    }
+  ],
+  "entrypoint": "dist/main",
+  "build": {
+    "build": "./build.sh",
+    "setup": "./setup.sh",
+    "path": "dist/archive.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  }
+}

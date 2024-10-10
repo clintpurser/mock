@@ -1,0 +1,11 @@
+{
+  "module_name": "mock",
+  "namespace": "cdp",
+  "language": "python",
+  "resource_type": "component",
+  "resource_subtype": "sensor",
+  "model_name": "mock-sensor",
+  "enable_cloud_build": true,
+  "generator_version": "0.1.0",
+  "generated_on": "2024-10-10T17:34:50.251272Z"
+}
