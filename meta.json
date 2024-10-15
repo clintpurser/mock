@@ -19,6 +19,14 @@
       "linux/amd64",
       "linux/arm64",
       "darwin/arm64"
+    ],
+    "darwin_deps": [
+      "go",
+      "pkg-config",
+      "nlopt-static",
+      "x264",
+      "jpeg-turbo",
+      "ffmpeg"
     ]
   }
 }
