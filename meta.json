@@ -3,7 +3,7 @@
   "module_id": "cdp:mock",
   "visibility": "public",
   "url": "https://github.com/clintpurser/mock",
-  "description": "Modular sensor component: mock-sensor",
+  "description": "A versatile sensor module that allows users to return mocked data in whatever structure they want. In this modules config populate a \"mock_data\" key with a list of valid json objects and this module will cycle through them as you call getReadings().",
   "models": [
     {
       "api": "rdk:component:sensor",
