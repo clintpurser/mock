@@ -1,5 +1,4 @@
 
 viam-sdk==0.31.0
-protobuf==4.24.0 
 
 typing-extensions
