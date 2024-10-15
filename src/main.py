@@ -1,7 +1,6 @@
 
 import asyncio
 from typing import Any, ClassVar, Dict, Final, List, Mapping, Optional, Sequence
-from google.protobuf.struct_pb2 import Struct
 from typing_extensions import Self
 from viam.components.sensor import *
 from viam.module.module import Module
@@ -23,9 +22,9 @@ class MockSensor(Sensor, EasyResource):
         if len(config.attributes.fields.get("mock_data", [])) > 0:
             raise Exception("A mock_data must be defined")
         
-        for reading in config.attributes.fields.get("mock_data", []):
-            if not isinstance(reading, Struct):
-                raise Exception("mock_data must only be populated with maps of data")
+        # for reading in config.attributes.fields.get("mock_data", []):
+            # if not isinstance(reading, Struct):
+            #     raise Exception("mock_data must only be populated with maps of data")
         return []
 
     def reconfigure(self, config: ComponentConfig, dependencies: Mapping[ResourceName, ResourceBase]):
